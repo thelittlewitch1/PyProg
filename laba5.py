@@ -16,7 +16,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score
 
 
-
 def distribution(data, name):
     print(name + ':\n', data.value_counts())
     sns.distplot(data)
@@ -87,6 +86,10 @@ if __name__ == '__main__':
     ].dropna()
     data = data[data.state != 33.0]
     print(data.columns.values.tolist())
+    data = data[data.product_type == 'Investment'][
+        ['timestamp', 'full_sq', 'life_sq', 'floor', 'max_floor', 'build_year', 'num_room',
+         'kitch_sq', 'state', 'price_doc', 'school_km', 'preschool_km', 'trc_count_500']
+    ]
     # Моё предположение:
     # 1. полная площадь, жилая площадь и количество комнат взаимосвязаны.
     # 2. цена связана с пощадью, площадью кухни, состоянием квартиры, этажом, этажностью дома
