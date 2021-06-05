@@ -1,6 +1,6 @@
 # PyProg
 Collection of labs for databases. 
-Using: pandas, numpy, pyplot, seaborn, etc
+Using: pandas, numpy, pyplot, seaborn, sklearn, etc
 
 -------
 
