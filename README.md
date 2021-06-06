@@ -1,5 +1,5 @@
 # PyProg
-Collection of labs for databases. 
+University practice on databases, bigdata, Artificial neural networks, third education year.
 Using: pandas, numpy, pyplot, seaborn, sklearn, etc
 
 -------
